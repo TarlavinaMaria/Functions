@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 int Sum(int a, int b);
 int Dif(int a, int b);
@@ -10,7 +10,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	int a, b;
-	cout << "Ââåäèòå äâà ÷èñëà: "; cin >> a >> b;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð²Ð° Ñ‡Ð¸ÑÐ»Ð°: "; cin >> a >> b;
 	int c = Sum(a, b);
 	cout << a << " + " << b << " = " << c << endl;
 	cout << a << " - " << b << " = " << Dif(a,b) << endl;
@@ -19,20 +19,20 @@ void main()
 	cout << a << " % " << b << " = " << Reminder(a,b) << endl;
 }
 
-int Sum(int a, int b) // ñóììà
+int Sum(int a, int b) // ÑÑƒÐ¼Ð¼Ð°
 {
 	int c = a + b;
 	return c;
 }
-int Dif(int a, int b) // ðàçíîñòü
+int Dif(int a, int b) // Ñ€Ð°Ð·Ð½Ð¾ÑÑ‚ÑŒ
 {
 	return a - b;
 }
-int Product(int a, int b) // óìíîæåíèå
+int Product(int a, int b) // ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ
 {
 	return a * b;
 }
-double Quotient(double a, double b) // äåëåíèå
+double Quotient(double a, double b) // Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ
 {
 	return a / b;
 }
