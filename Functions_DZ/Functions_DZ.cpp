@@ -3,15 +3,13 @@ using namespace std;
 double Factorial(int n, double f);
 double Power(double a, double n, double res);
 
-//#define FACTORIAL
+#define FACTORIAL
 //#define POWER
 
 void main()
 {
     setlocale(LC_ALL, "");
 #ifdef FACTORIAL
-    int n;
-    double f = 1;
     cout << "Введите число для вычисления факториала "; cin >> n;
     cout << "Факториал для числа " << n << "! = " << Factorial(n, f) << endl;
 #endif // FACTORIAL
@@ -34,6 +32,8 @@ void main()
     }
     double Power(double a, double n, double res)
     {
+    int n;
+    double f = 1;
         if (n < 0)
         {
             a = 1 / a;
