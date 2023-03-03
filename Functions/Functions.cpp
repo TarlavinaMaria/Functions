@@ -5,6 +5,8 @@ int Dif(int a, int b);
 int Product(int a, int b);
 double Quotient(double a, double b);
 int Reminder(int a, int b);
+int Factorial(int n);
+double Power(double a, int n);
 
 void main()
 {
@@ -17,6 +19,12 @@ void main()
 	cout << a << " * " << b << " = " << Product(a,b) << endl;
 	cout << a << " / " << b << " = " << Quotient(a,b) << endl;
 	cout << a << " % " << b << " = " << Reminder(a,b) << endl;
+
+	int n;
+	cout << "Введите число для вычисления факториала: "; cin >> n;
+	cout << n << "! = " << Factorial(n) << endl;
+
+	cout << a << " ^ " << b << " = " << Power(a, b) << endl;
 }
 
 int Sum(int a, int b) // сумма
@@ -39,5 +47,28 @@ double Quotient(double a, double b) // деление
 int Reminder(int a, int b)
 {
 	return a % b;
+}
+int Factorial(int n)
+{
+	int f = 1;
+	for (int i = 1; i <=n; i++)
+	{
+		f *= i;
+	}
+	return f;
+}
+double Power(double a, int n)
+{
+	double N = 1;
+	if (n < 0)
+	{
+		a = 1 / a;
+		n = -n;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		N *= a;
+	}
+	return N;
 }
 
