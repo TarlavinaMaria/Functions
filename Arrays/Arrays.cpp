@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 
@@ -10,7 +10,7 @@ void main()
 	int arr[n];
 	/*arr[2] = 123;
 	cout << arr[2] << endl;*/
-	cout << "Ââåäèòå ýëåìåíòû ìàññèâà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	for (int i = 0; i < n; i++)
 	{
 		cin >> arr[i];
