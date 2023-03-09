@@ -8,6 +8,7 @@ void main()
 	setlocale(LC_ALL, "");
 	const int n = 5;
 	int arr[n];
+	int sum = 0;
 	/*arr[2] = 123;
 	cout << arr[2] << endl;*/
 	cout << "Введите элементы массива: ";
@@ -20,4 +21,19 @@ void main()
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
+	for (int i = 0; i < n; i++)
+	{
+		sum += arr[i];
+	}
+	cout << "Сумма: " << sum << endl;
+	cout << "Среднее арифметическое: " << sum / n << endl;
+	int max = arr[0];
+	int	min = arr[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (max < arr[i]) max = arr[i];
+		if (min > arr[i]) min = arr[i];
+	}
+	cout << "Max: " << max << endl;
+	cout << "Min: " << min << endl;
 }
