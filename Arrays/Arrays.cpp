@@ -26,7 +26,7 @@ void main()
 		sum += arr[i];
 	}
 	cout << "Сумма: " << sum << endl;
-	cout << "Среднее арифметическое: " << sum / n << endl;
+	cout << "Среднее арифметическое: " << (double)sum / n << endl;
 	int max = arr[0];
 	int	min = arr[0];
 	for (int i = 0; i < n; i++)
